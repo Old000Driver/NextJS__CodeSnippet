@@ -7,7 +7,7 @@ export default async function Page() {
     return (
       <Link
         key={snippet.id}
-        href={`/snippet/${snippet.id}`}
+        href={`/snippets/${snippet.id}`}
         className="flex items-center justify-between mt-5 border border-teal-500 p-2 rounded"
       >
         <span>{snippet.title}</span>
@@ -15,7 +15,7 @@ export default async function Page() {
       </Link>
     );
   });
-  console.log(snippets);
+  // console.log(snippets);
   return (
     <>
       <div className="flex items-center justify-between mt-5">
