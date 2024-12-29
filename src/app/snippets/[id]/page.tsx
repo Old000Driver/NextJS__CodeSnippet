@@ -3,6 +3,7 @@ import Link from "next/link";
 import { db } from "@/db";
 import { notFound } from "next/navigation";
 import { sleep } from "@/app/utils";
+import SnippetDelButton from "@/components/snippet-del-button";
 
 interface SnippetShowPageProps {
   params: { id: string };
@@ -23,7 +24,7 @@ export default async function page(props: SnippetShowPageProps) {
           <Link className="p-2 border border-teal-500 rounded" href="">
             Edit
           </Link>
-          <button className="p-2 border border-teal-500 rounded">Delete</button>
+          <SnippetDelButton id={+id} />
         </div>
       </div>
       <pre className="p-3 border border-teal-500 rounded bg-gray-300 mt-6">
