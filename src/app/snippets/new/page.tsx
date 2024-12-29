@@ -10,7 +10,7 @@ export default function page() {
 
     console.log("formData", formData);
 
-    const snippet = await db.snippet.create({
+    await db.snippet.create({
       data: {
         title,
         code,

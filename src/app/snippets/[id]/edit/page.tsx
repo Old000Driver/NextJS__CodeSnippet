@@ -8,7 +8,7 @@ export default async function page({ params }: { params: { id: string } }) {
     where: { id },
   });
 
-  console.log("🔥 snippet：", snippet);
+  // console.log("🔥 snippet：", snippet);
 
   if (!snippet) return notFound();
   return (
