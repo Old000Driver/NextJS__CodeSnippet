@@ -11,7 +11,7 @@ interface SnippetShowPageProps {
 }
 
 export default async function page(props: SnippetShowPageProps) {
-  await sleep();
+  // await sleep();
   const id = props.params.id;
   const snippet = await db.snippet.findFirst({
     where: { id: parseInt(id) },
