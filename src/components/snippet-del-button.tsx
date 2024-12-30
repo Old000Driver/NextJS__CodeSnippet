@@ -1,7 +1,7 @@
 "use client";
 import { deleteSnippet } from "@/actions";
 import React, { startTransition } from "react";
-export default function snippetDelButton(props: { id: number }) {
+export default function SnippetDelButton(props: { id: number }) {
   const handleDelete = () => {
     startTransition(async () => {
       await deleteSnippet(props.id);

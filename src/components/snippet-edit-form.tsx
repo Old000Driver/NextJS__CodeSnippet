@@ -5,7 +5,7 @@ import { useState } from "react";
 import { editSnippet } from "@/actions";
 import BackHome from "./backHome-button";
 
-export default function snippetEditForm({ snippet }: { snippet: Snippet }) {
+export default function SnippetEditForm({ snippet }: { snippet: Snippet }) {
   const [code, setCode] = useState(snippet.code);
 
   const editSnippetWithOthers = editSnippet.bind(null, snippet.id, code);

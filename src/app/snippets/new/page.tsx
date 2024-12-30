@@ -6,7 +6,7 @@ import { useFormState } from "react-dom";
 const initState = {
   message: "",
 };
-export default function page() {
+export default function Page() {
   const [state, formAction] = useFormState(createSnippet, initState);
   return (
     <form action={formAction}>
