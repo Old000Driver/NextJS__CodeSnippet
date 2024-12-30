@@ -4,6 +4,3 @@ CREATE TABLE "Snippet" (
     "title" TEXT NOT NULL,
     "code" TEXT NOT NULL
 );
-
-
--- INSERT INTO "Snippet" ("code", "title") VALUES ('console.log("hello next")', 'Hello Vercel');
