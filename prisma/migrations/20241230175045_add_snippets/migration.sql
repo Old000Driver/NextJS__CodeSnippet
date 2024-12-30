@@ -6,4 +6,4 @@ CREATE TABLE "Snippet" (
 );
 
 
-INSERT INTO "Snippet" ("code", "title") VALUES ('console.log("hello next")', 'Hello Vercel');
+-- INSERT INTO "Snippet" ("code", "title") VALUES ('console.log("hello next")', 'Hello Vercel');
