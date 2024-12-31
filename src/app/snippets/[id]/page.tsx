@@ -42,6 +42,7 @@ export default async function page(props: SnippetShowPageProps) {
 // Return a list of `params` to populate the [slug] dynamic segment
 export async function generateStaticParams() {
   const snippets = await db.snippet.findMany();
+  if (snippets.length < 1) return [];
   return snippets.map((snippet) => {
     id: snippet.id.toString();
   });
